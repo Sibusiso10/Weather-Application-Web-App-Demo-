@@ -1,0 +1,647 @@
+.cover {
+  background-color: #0c0056;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.mainContainerBackGround {
+  margin-top: 30px;
+  width: 1240px;
+}
+.innerSearchBar {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 0.2em solid black;
+  margin-top: 5px;
+  margin-bottom: 2em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.inSearch {
+  display: flex;
+  justify-content: space-between;
+}
+.inSearch input {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 0.1em solid black;
+  margin: 1px 5px;
+  color: white;
+  width: 90%;
+}
+
+.inSearch img {
+  margin-right: 2em;
+  padding: 0.1em 0;
+}
+
+.mobileClock {
+  display: none;
+}
+
+.tempAndIcon {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.locAndTempContainer {
+  display: grid;
+  place-items: center;
+  width: 60%;
+}
+
+.tempAndLoc {
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 2px solid #2ea7e0;
+  border-radius: 1.5em;
+  box-shadow: 0 0 70px rgba(0, 255, 255, 0.3);
+  height: 370px;
+  width: 550px;
+}
+
+.containerLocAndTemp {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+
+.location {
+  font-size: 32px;
+  font-family: "David Libre";
+  text-decoration: underline;
+  margin-top: 110px;
+  margin-left: 30px;
+  width: 40%;
+}
+
+.theTemp {
+  margin: 0 30px 10px 0;
+  font-size: 80px;
+  font-family: "Itim";
+  width: 60%;
+}
+
+.containerHighAndLowTemp {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lowTemp,
+.highTemp {
+  color: white;
+  font-size: 32px;
+  font-family: "Itim";
+  width: 50%;
+}
+
+.lowTemp {
+  margin-top: 40px;
+}
+.highTemp {
+  margin-top: -10px;
+}
+
+.DiscriptionLow {
+  margin-right: 1em;
+}
+.DiscriptionHigh {
+  margin-left: 1em;
+}
+
+/*Lower half*/
+
+.otherWeatherDetails {
+  display: flex;
+  justify-content: space-between;
+}
+.otherWeatherDetails P {
+  font-family: "Itim";
+  font-size: 20px;
+}
+.weatherDetails {
+  color: white;
+  display: grid;
+  place-items: center;
+  width: 50%;
+}
+
+.weatherTittleAndClock {
+  width: 50%;
+}
+
+.detailsContainer {
+  background-color: rgb(0, 0, 0, 0.4);
+  border: 2px solid #2ea7e0;
+  border-radius: 1.5em;
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.3);
+  height: 370px;
+  width: 440px;
+}
+
+.firstDetails {
+  display: flex;
+  justify-content: space-between;
+  height: 50%;
+}
+
+.windSpeed {
+  display: grid;
+  border-right: 0.5px solid white;
+  place-items: center;
+  width: 50%;
+}
+
+.humidity {
+  display: grid;
+  border-left: 0.5px solid white;
+  place-items: center;
+  width: 50%;
+}
+
+.secondDetails {
+  display: flex;
+  border-top: 2px solid white;
+  justify-content: center;
+}
+
+.pressure {
+  display: grid;
+  place-items: center;
+  width: 50%;
+}
+
+.weatherDescription {
+  color: white;
+  display: grid;
+  font-size: 60px;
+  font-family: "K2D";
+  place-items: center;
+  height: 70%;
+  text-decoration: underline;
+}
+
+.dateAndClocks {
+  color: white;
+  display: flex;
+  font-size: 30px;
+  font-family: "JetBrains Mono";
+  justify-content: space-evenly;
+  height: 30%;
+}
+.flex {
+  display: flex;
+}
+.dateAndClocks p {
+  text-decoration: underline;
+  margin: 0 0.5em;
+}
+/*Weather icon*/
+.weatherIcon {
+  margin: auto;
+}
+.iconContainer {
+  display: grid;
+  place-items: center;
+  height: 370px;
+}
+
+.theWeatherIcon {
+  height: 300px;
+}
+/*Font*/
+
+.kavoon-regular {
+  font-family: "Kavoon", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*Background color based on the weather.*/
+
+.clouds,
+.drizzle,
+.Atmosphere,
+.Rain,
+.snow,
+.clear-skies,
+.Thunderstorm {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  overflow-y: scroll;
+  width: 100%;
+}
+.clouds {
+  background-color: #9e9f96;
+}
+.drizzle {
+  background-color: #00c8bc;
+}
+.Atmosphere {
+  background-color: #61cee5;
+}
+.Rain {
+  background-color: #005aad;
+}
+.snow {
+  background-color: #61cee5;
+}
+.clear-skies {
+  background-color: #659df1;
+}
+.Thunderstorm {
+  background-color: #0c0056;
+}
+
+@media only screen and (max-width: 1570px) {
+  .mainContainerBackGround {
+    margin-top: 20px;
+    width: 1000px;
+  }
+  .innerSearchBar {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 0.2em solid black;
+    border-radius: 0 2em 2em 0;
+    margin-top: 5px;
+    margin-bottom: 40px;
+  }
+  .tempAndLoc {
+    height: 300px;
+    width: 480px;
+  }
+
+  .location {
+    font-size: 27px;
+    font-family: "David Libre";
+    text-decoration: underline;
+    margin-top: 80px;
+    margin-left: 30px;
+    width: 40%;
+  }
+
+  .theTemp {
+    margin: 0.2em 30px 10px 0;
+    font-size: 45px;
+    font-family: "Itim";
+    width: 60%;
+  }
+
+  .containerHighAndLowTemp {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .lowTemp,
+  .highTemp {
+    color: white;
+    font-size: 32px;
+    font-family: "Itim";
+    width: 50%;
+  }
+
+  .lowTemp {
+    margin: auto;
+  }
+  .highTemp {
+    margin: auto;
+  }
+
+  .DiscriptionLow {
+    margin-right: 1em;
+  }
+  .DiscriptionHigh {
+    margin-left: 1em;
+  }
+}
+
+@media only screen and (max-width: 1030px) {
+  .mainContainerBackGround {
+    margin-top: 20px;
+    width: 800px;
+  }
+
+  .inSearch input {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 0.1em solid black;
+    margin: 1px 5px;
+    color: white;
+    width: 85%;
+  }
+
+  .inSearch img {
+    margin-right: 2em;
+    padding: 0.1em 0;
+  }
+
+  .tempAndLoc {
+    height: 200px;
+    width: 300px;
+  }
+
+  .location {
+    font-size: 1.3em;
+    font-family: "David Libre";
+    text-decoration: underline;
+    margin-top: auto;
+    margin-left: auto;
+    width: 50%;
+  }
+
+  .theTemp {
+    margin: 10px 30px 10px 0;
+    font-size: 2em;
+    font-family: "Itim";
+    margin: auto;
+    width: 50%;
+  }
+
+  .lowTemp,
+  .highTemp {
+    color: white;
+    font-size: 1.5em;
+    font-family: "Itim";
+    width: 50%;
+  }
+
+  .lowTemp {
+    margin-top: 0;
+  }
+  .highTemp {
+    margin-top: 0;
+  }
+
+  .DiscriptionLow {
+    margin-right: 0;
+  }
+  .DiscriptionHigh {
+    margin-left: 0;
+  }
+
+  /*Weather icon*/
+  .weatherIcon {
+    margin: auto;
+  }
+  .iconContainer {
+    display: grid;
+    place-items: center;
+    height: 200px;
+  }
+
+  .theWeatherIcon {
+    height: 200px;
+    width: 200px;
+  }
+
+  /*Lower half*/
+
+  .otherWeatherDetails {
+    display: flex;
+    justify-content: space-between;
+  }
+  .otherWeatherDetails P {
+    font-family: "Itim";
+    font-size: 1em;
+  }
+  .weatherDetails {
+    color: white;
+    display: grid;
+    place-items: center;
+    width: 50%;
+  }
+
+  .weatherTittleAndClock {
+    width: 50%;
+  }
+
+  .detailsContainer {
+    background-color: rgb(0, 0, 0, 0.4);
+    border: 2px solid #2ea7e0;
+    border-radius: 1.5em;
+    box-shadow: 0 0 40px rgba(0, 255, 255, 0.3);
+    height: 280px;
+    width: 300px;
+  }
+
+  /*The weather description, data and time*/
+  .weatherDescription {
+    color: white;
+    display: grid;
+    font-size: 2.2em;
+    font-family: "K2D";
+    place-items: center;
+    height: 50%;
+    text-decoration: underline;
+  }
+
+  .dateAndClocks {
+    color: white;
+    display: flex;
+    font-size: 1.2em;
+    font-family: "JetBrains Mono";
+    justify-content: space-evenly;
+    height: 30%;
+  }
+  .flex {
+    display: flex;
+  }
+  .dateAndClocks p {
+    text-decoration: underline;
+    margin: 0 0.5em;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .mainContainerBackGround {
+    margin-top: 20px;
+    width: 390px;
+  }
+
+  .inSearch input {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 0.1em solid black;
+    margin: 1px 5px;
+    color: white;
+    width: 85%;
+  }
+
+  .inSearch img {
+    margin-right: 1em;
+    padding: 0 0;
+  }
+  .inSearch img {
+    width: 1.4em;
+  }
+
+  .locAndTempContainer {
+    margin: auto;
+    padding: 0;
+    width: 100%;
+  }
+
+  .tempAndIcon {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .tempAndLoc {
+    height: 200px;
+    width: 300px;
+  }
+
+  .location {
+    font-size: 1.3em;
+    font-family: "David Libre";
+    text-decoration: underline;
+    margin-top: auto;
+    margin-left: auto;
+    width: 50%;
+  }
+
+  .theTemp {
+    margin: 10px 30px 10px 0;
+    font-size: 2em;
+    font-family: "Itim";
+    margin: auto;
+    width: 50%;
+  }
+
+  .lowTemp,
+  .highTemp {
+    color: white;
+    font-size: 1.5em;
+    font-family: "Itim";
+    width: 50%;
+  }
+
+  .lowTemp {
+    margin-top: 0;
+  }
+  .highTemp {
+    margin-top: 0;
+  }
+
+  .DiscriptionLow {
+    margin-right: 0;
+  }
+  .DiscriptionHigh {
+    margin-left: 0;
+  }
+
+  /*Weather icon*/
+  .weatherIcon {
+    margin: auto;
+  }
+  .iconContainer {
+    display: grid;
+    place-items: center;
+    height: 210px;
+  }
+
+  .theWeatherIcon {
+    height: 150px;
+  }
+
+  /*Lower half*/
+
+  .otherWeatherDetails {
+    display: flex;
+    justify-content: space-between;
+  }
+  .otherWeatherDetails P {
+    font-size: 1em;
+  }
+
+  .detailsContainer {
+    background-color: rgb(0, 0, 0, 0.4);
+    border: 2px solid #2ea7e0;
+    border-radius: 1.5em;
+    box-shadow: 0 0 40px rgba(0, 255, 255, 0.3);
+    height: 280px;
+    width: 300px;
+  }
+
+  /*The weather description, data and time*/
+  .weatherDescription {
+    color: white;
+    display: grid;
+    place-items: center;
+    height: 50%;
+    text-decoration: underline;
+  }
+
+  .dateAndClocks {
+    color: white;
+    display: flex;
+    font-size: 0.5em;
+    font-family: "JetBrains Mono";
+    justify-content: space-evenly;
+    height: 30%;
+  }
+  .flex {
+    display: flex;
+  }
+  .dateAndClocks p {
+    text-decoration: underline;
+    margin: 0 0.5em;
+  }
+
+  /*Lower half*/
+
+  .otherWeatherDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .otherWeatherDetails P {
+    font-family: "Itim";
+    font-size: 1em;
+  }
+  .weatherDetails {
+    color: white;
+    display: grid;
+    place-items: center;
+    width: 100%;
+  }
+
+  .weatherTittleAndClock {
+    width: 100%;
+  }
+
+  .detailsContainer {
+    margin: auto;
+    height: 300px;
+    width: 300px;
+  }
+
+  .firstDetails {
+    display: flex;
+    justify-content: space-between;
+    height: 50%;
+  }
+
+  .secondDetails {
+    display: flex;
+    border-top: 2px solid white;
+    justify-content: center;
+  }
+
+  .weatherDescription {
+    font-size: 2em;
+    margin: 1em 0;
+  }
+
+  .dateAndClocks {
+    color: white;
+    display: flex;
+    font-size: 1.4em;
+    margin: 0.5em;
+    height: 30%;
+  }
+  .flex {
+    display: flex;
+  }
+  .dateAndClocks p {
+    text-decoration: underline;
+    margin: 0 0.5em;
+  }
+}

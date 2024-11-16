@@ -1,0 +1,114 @@
+.mainContainer {
+  background-color: #225561;
+  display: grid;
+  place-items: center;
+  margin: auto 0;
+  padding: 0;
+  height: 100vh;
+  overflow-y: scroll;
+}
+.subContainer {
+  margin: 0 0 200px 0;
+}
+.mainContainer h1 {
+  color: white;
+  font-size: 66px;
+  font-family: "Kavoon";
+  font-weight: 100;
+  text-decoration: underline;
+  margin: 10px 0 200px 0;
+  padding: 0;
+}
+.enterLocation {
+  text-align: left;
+}
+.enterLocation p {
+  color: white;
+  font-family: "Kavoon";
+  font-weight: lighter;
+  font-size: 20px;
+  margin: 0 0 1em 0.5em;
+}
+.Container1 {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.Container1 input {
+  border-radius: 6px;
+  border: 2px solid black;
+  margin: 0 auto;
+  padding: 0 10px;
+  height: 3em;
+  width: 290px;
+}
+
+.Container1 button {
+  background-color: rgba(255, 255, 255, 1);
+  border: 2px solid black;
+  border-radius: 6px;
+  color: black;
+  margin: 0 0 0 2em;
+  font-size: 19px;
+  font-family: sans-serif;
+  font-weight: 200;
+  width: 100px;
+}
+
+/*Responsive for smaller devices*/
+@media only screen and (max-width: 700px) {
+  .mainContainer h1 {
+    font-size: 56px;
+    margin: 10px 0 150px 0;
+  }
+  .Container1 input {
+    height: 2em;
+    width: 240px;
+  }
+  .Container1 button {
+    margin: 0 0 0 1em;
+    font-size: 15px;
+    width: 80px;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .mainContainer h1 {
+    font-size: 40px;
+    margin: 10px 0 120px 0;
+  }
+  .enterLocation {
+    text-align: center;
+  }
+  .Container1 input {
+    margin: 0;
+    height: 2em;
+    width: 200px;
+  }
+  .Container1 button {
+    margin: 0 0 0 0.5em;
+    font-size: 15px;
+    width: 60px;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .mainContainer h1 {
+    font-size: 33px;
+    margin: 10px 0 120px 0;
+  }
+  .enterLocation {
+    text-align: center;
+  }
+  .Container1 input {
+    margin: 0;
+    height: 2em;
+    width: 160px;
+  }
+  .Container1 button {
+    margin: 0 0 0 0.5em;
+    font-size: 12px;
+    width: 60px;
+  }
+}
